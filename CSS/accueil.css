@@ -1,0 +1,69 @@
+#header{
+    height: 80px;
+    box-shadow: 0px 8px 8px rgba(3, 3, 124, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 15px
+}
+.liens {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 10%; 
+}
+
+.btn.btn-primary {
+    background-color:rgb(3, 3, 124);
+    transition: .4s ease-in-out ;
+}
+
+.btn.btn-primary:hover{
+    background-color: white ;
+    color:rgb(3, 3, 124);
+    transition: .4s ease-in-out ;
+    
+}
+
+.boite {
+    background-color: rgba(3, 3, 124, 0.2);
+    flex: 1; 
+    padding: 10px;
+    transition: 1s ease ;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+
+#image_nat {
+    flex: 1; 
+    padding: 10px;
+}
+
+.boxTitle {
+    text-align: center;
+    font-weight: 700;
+}
+
+#resume {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+}
+
+
+body {
+    font-family:'Segoe UI';
+}
+
+#prepa_polytech {
+    display: flex;
+    background-color: transparent;
+    border-top : 1px solid black;
+}
+
+
+
+

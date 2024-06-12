@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nathan Domenichini - CV et contact</title>
+    <link rel="stylesheet" href="CSS/accueil.css">
+    <script src="essai.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<header>
+    <div id="header">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="IMAGES/Image1.png" height="72px">
+            </a>
+        </div>
+        
+        <div class="liens">
+            <a href="./index.html">
+                <button class="btn btn-primary">Accueil</button>
+            </a>
+
+            <a href="./cv/index.html">
+                <button class="btn btn-primary">Mon parours scolaire</button>
+            </a>
+
+            <a href="./contact/index.html">
+                <button class="btn btn-primary">Contact</button>
+            </a>
+        </div>
+    </div>
+    
+</header>
+<body>
+    <div style="display: flex;">
+        <div id="image_nat">
+            <img src="IMAGES/nathan.png" width="250px">
+        </div>
+        <div class="boite">
+            <h1 class="boxTitle">Bonjour !</h1>
+            <div id="resume">
+                Après avoir obtenu mon BAC Général avec mention Bien, j'ai intégré le réseau Polyech. 
+                J'ai donc commencé par la prépa dite "intégrée" ou PeiP (Parcours des Écoles d'Ingénieur Polytech) 
+                à Annecy. Je poursuis maintenant mon cursus à Polytech Nantes, en formation Ingénieur Informatique.
+
+            </div>
+            <script src="JS/age.js"></script>
+        </div>
+    </div>
+
+    <form class='ntm' action="submit.php" oninput="inputText()" method="post">
+        Dites un truc dans cette barre de recherche
+        <input class='ntm' type="text" oninput="inputText()">
+        <input type="submit" value="Submit">
+    </form>
+    
+    
+
+    <div id="scolarite">
+        <h2>Parcours scolaire</h2>
+        <div id="prepa_polytech">
+            
+            <img width="10%" src="https://vectorseek.com/wp-content/uploads/2023/12/Polytech-Annecy-Chambery-Logo-Vector.svg-.png"> 
+            <h3>Prépa intégrée</h3>
+
+
+        </div>
+    </div>
+    
+</body>

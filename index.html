@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,14 +9,12 @@
     <link rel="stylesheet" href="CSS/accueil.css">
     <script src="essai.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-
-
 </head>
 <header>
     <div id="header">
         <div class="logo">
             <a href="./index.html">
-                <img src="IMAGES/Image1.png" height="72px">
+                <img src="FILES/Image1.png" height="72px">
             </a>
         </div>
         
@@ -26,11 +23,11 @@
                 <button class="btn btn-primary">Accueil</button>
             </a>
 
-            <a href="./cv/index.html">
+            <a href="./CV.html">
                 <button class="btn btn-primary">Mon parours scolaire</button>
             </a>
 
-            <a href="./contact/index.html">
+            <a href="./CONTACT.html">
                 <button class="btn btn-primary">Contact</button>
             </a>
         </div>
@@ -40,7 +37,7 @@
 <body>
     <div style="display: flex;">
         <div id="image_nat">
-            <img src="IMAGES/nathan.png" width="250px">
+            <img src="FILES/nathan.png" width="250px">
         </div>
         <div class="boite">
             <h1 class="boxTitle">Bonjour !</h1>
@@ -54,11 +51,8 @@
         </div>
     </div>
 
-    <form class='ntm' action="submit.php" oninput="inputText()" method="post">
-        Dites un truc dans cette barre de recherche
-        <input class='ntm' type="text" oninput="inputText()">
-        <input type="submit" value="Submit">
-    </form>
+
+    <input class='ntm' type="text" oninput="inputText()">
     
     
 
@@ -72,5 +66,22 @@
 
         </div>
     </div>
+
+    <h1>Diplômes et certifications</h1>
+
+    <section class="diplomes">
+        <div class="diplome">
+            <h2>2023</h2>
+            <h3>Parcours des Écoles d'Ingénieurs Polytech</h3>
+        </div>
+        <div class="diplome">
+            <h2>2023</h2>
+            <h3>Permis de conduire B</h3>
+        </div>
+        <div class="diplome">
+            <h2>2021</h2>
+            <h3>Baccalauréat Général - Mention Bien</h3>
+            <p>Spécialités Mathématiques et Physique</p>
+    </section>
     
 </body>

@@ -33,3 +33,17 @@ function getIP() {
         })
         .catch(error => console.error('Error:', error));
 }
+
+function inputTest() {
+    var inputValue = document.getElementsByClassName('ntm')[0].value.toLowerCase();
+    var liste_search = document.getElementsByClassName('ecole_texte');
+
+    for (let i = 0; i < liste_search.length; i++) {
+        let texte = liste_search[i].textContent || liste_search[i].innerText;
+        if (!texte.toLowerCase().includes(inputValue)) {
+            liste_search[i].parentElement.style.display = 'none';
+        } else {
+            liste_search[i].parentElement.style.display = ''; // Affiche l'élément si le texte correspond
+        }
+    }
+}

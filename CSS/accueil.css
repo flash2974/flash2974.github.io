@@ -31,16 +31,13 @@
 
 .boite {
     background-color: rgba(3, 3, 124, 0.2);
-    flex: 1; 
     padding: 10px;
-    transition: 1s ease ;
-    width: 200px;
-    height: 200px;
+    max-width: 800px; /* Limite la largeur maximale tout en permettant à la boîte de rétrécir */
     align-items: center;
+    flex: 1;
 }
 
 #image_nat {
-    flex: 1; 
     padding: 10px;
 }
 
@@ -50,8 +47,8 @@
 }
 
 #resume {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: justify;
 }
 
@@ -60,11 +57,45 @@ body {
     font-family:'Segoe UI';
 }
 
-#prepa_polytech {
+#bonjour { /* Remplacez #conteneur_parent par l'ID ou la classe réelle du conteneur parent */
     display: flex;
-    background-color: transparent;
-    border-top : 1px solid black;
+    flex-direction: row; /* ou column, selon votre disposition souhaitée */
+    justify-content: center; /* Centre les éléments enfants horizontalement */
+    align-items: center; /* Centre les éléments enfants verticalement */
 }
+
+.logo_ecole {
+    text-align: left;
+    padding-left: 0px;
+}
+
+th, td {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-top: 2px solid black;
+}
+
+.annee, .ecole_texte {
+    font-size: 17px;
+}
+
+#table_diplomes {
+    margin-left: 10px;
+    /* width: 640px; */
+}
+
+.pin {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+
 
 
 

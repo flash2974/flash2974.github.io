@@ -7,7 +7,7 @@
 
     <title>Nathan Domenichini - CV et contact</title>
     <link rel="stylesheet" href="CSS/accueil.css">
-    <script src="essai.js"></script>
+    <script src="JS/essai.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <header>
@@ -35,7 +35,7 @@
     
 </header>
 <body>
-    <div style="display: flex;">
+    <div id="bonjour">
         <div id="image_nat">
             <img src="FILES/nathan.png" width="250px">
         </div>
@@ -52,36 +52,40 @@
     </div>
 
 
-    <input class='ntm' type="text" oninput="inputText()">
-    
-    
+    <input class='ntm' type="text" oninput="inputTest()">
 
-    <div id="scolarite">
-        <h2>Parcours scolaire</h2>
-        <div id="prepa_polytech">
-            
-            <img width="10%" src="https://vectorseek.com/wp-content/uploads/2023/12/Polytech-Annecy-Chambery-Logo-Vector.svg-.png"> 
-            <h3>Prépa intégrée</h3>
+    <h1 style="padding-left: 10px;">Diplômes et certifications</h1>
+
+    <table id='table_diplomes'>
+        <tr>
+            <td class="logo_ecole"><a href='https://www.univ-smb.fr/polytech/'><img height="50px" src="FILES/polytech.png"></a></td>
+            <td class="annee">2022-2024</td>
+            <td class="ecole_texte">Prépa intégrée<br><i>Polytech Annecy-Chambéry</i></td>
+            <td><img class='pin' height='15px' src="FILES/map.png">Annecy-Le-Vieux (74940)</td>
+        </tr>
+
+        <tr>
+            <td class="logo_ecole"><a href='http://www.autoecole-remond.fr/'><img height="50px" src="FILES/remond.jpg"></a></td>
+            <td class="annee">2024</td>
+            <td class="ecole_texte">Permis B<br><i>Auto-école Remond</i></td>
+            <td><img class='pin' height='15px' src="FILES/map.png">Annecy (74000)</td>
+        </tr>
+
+        <tr>
+            <td class="logo_ecole"><a href='https://charles-poncet.ent.auvergnerhonealpes.fr/'><img height="50px" src="FILES/poncet.png"></a></td>
+            <td class="annee">2019-2022</td>
+            <td class="ecole_texte">Bac général mention Bien<br><i>Lycée Charles Poncet</i></td>
+            <td><img class='pin' height='15px' src="FILES/map.png">Cluses (74300)</td>
+        </tr>
+
+        <tr>
+            <td class="logo_ecole"><a href='https://site.ac-martinique.fr/clg-terreville/'><img height="50px" src="FILES/terreville.jpg"></a></td>
+            <td class="annee">2015-2019</td>
+            <td class="ecole_texte">Brevet mention Très Bien<br><i>Collège de Terreville</i></td>
+            <td><img class='pin' height='15px' src="FILES/map.png">Schœlcher (97233)</td>
+        </tr>
 
 
-        </div>
-    </div>
-
-    <h1>Diplômes et certifications</h1>
-
-    <section class="diplomes">
-        <div class="diplome">
-            <h2>2023</h2>
-            <h3>Parcours des Écoles d'Ingénieurs Polytech</h3>
-        </div>
-        <div class="diplome">
-            <h2>2023</h2>
-            <h3>Permis de conduire B</h3>
-        </div>
-        <div class="diplome">
-            <h2>2021</h2>
-            <h3>Baccalauréat Général - Mention Bien</h3>
-            <p>Spécialités Mathématiques et Physique</p>
-    </section>
-    
+    </table>
 </body>
+<footer>Site entièrement designé par moi-même en HTML/CSS/Javascript.</footer>
